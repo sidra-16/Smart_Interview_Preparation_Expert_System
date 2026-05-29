@@ -1,0 +1,278 @@
+{
+  "technical": {
+    "python": [
+      {
+        "id": "py1",
+        "question": "What is the difference between a list and a tuple in Python?",
+        "difficulty": "beginner",
+        "keywords": ["mutable", "immutable", "list", "tuple", "ordered"],
+        "sample_answer": "Lists are mutable (can be changed) while tuples are immutable (cannot be changed after creation). Both are ordered collections."
+      },
+      {
+        "id": "py2",
+        "question": "Explain Python decorators with a simple example.",
+        "difficulty": "intermediate",
+        "keywords": ["wrapper", "function", "modify", "behavior", "@"],
+        "sample_answer": "Decorators are functions that wrap another function to modify its behavior without changing its source code. They use the @ syntax."
+      },
+      {
+        "id": "py3",
+        "question": "What is the difference between *args and **kwargs in Python?",
+        "difficulty": "intermediate",
+        "keywords": ["positional", "keyword", "arguments", "variable", "args", "kwargs"],
+        "sample_answer": "*args allows passing variable number of positional arguments, **kwargs allows passing variable number of keyword arguments."
+      },
+      {
+        "id": "py4",
+        "question": "What is a Python generator and when would you use one?",
+        "difficulty": "intermediate",
+        "keywords": ["yield", "lazy", "memory", "iterator", "generator"],
+        "sample_answer": "Generators use yield to produce values lazily, saving memory. Use them for large datasets or infinite sequences."
+      }
+    ],
+    "dsa": [
+      {
+        "id": "dsa1",
+        "question": "What is the time complexity of binary search?",
+        "difficulty": "beginner",
+        "keywords": ["O(log n)", "logarithmic", "sorted", "divide"],
+        "sample_answer": "O(log n) because binary search divides the search space in half with each step on a sorted array."
+      },
+      {
+        "id": "dsa2",
+        "question": "Explain the difference between a stack and a queue.",
+        "difficulty": "beginner",
+        "keywords": ["LIFO", "FIFO", "stack", "queue", "last in first out", "first in first out"],
+        "sample_answer": "Stack is LIFO (Last In First Out), like a stack of plates. Queue is FIFO (First In First Out), like a line at a store."
+      },
+      {
+        "id": "dsa3",
+        "question": "What is dynamic programming? Give a classic example.",
+        "difficulty": "intermediate",
+        "keywords": ["memoization", "subproblems", "optimal", "fibonacci", "knapsack", "overlapping"],
+        "sample_answer": "Dynamic programming solves problems by breaking them into overlapping subproblems and storing results (memoization). Fibonacci sequence is a classic example."
+      },
+      {
+        "id": "dsa4",
+        "question": "How does a hash table work and what is a collision?",
+        "difficulty": "intermediate",
+        "keywords": ["hash", "collision", "bucket", "key", "value", "O(1)"],
+        "sample_answer": "Hash tables use a hash function to map keys to buckets. A collision occurs when two keys hash to the same bucket, resolved by chaining or open addressing."
+      }
+    ],
+    "oop": [
+      {
+        "id": "oop1",
+        "question": "What are the four pillars of Object-Oriented Programming?",
+        "difficulty": "beginner",
+        "keywords": ["encapsulation", "inheritance", "polymorphism", "abstraction"],
+        "sample_answer": "The four pillars are: Encapsulation (hiding data), Inheritance (extending classes), Polymorphism (multiple forms), and Abstraction (hiding complexity)."
+      },
+      {
+        "id": "oop2",
+        "question": "What is polymorphism? Give an example.",
+        "difficulty": "beginner",
+        "keywords": ["overriding", "overloading", "inheritance", "method", "oop"],
+        "sample_answer": "Polymorphism means one interface, many implementations. Example: a method 'speak()' behaves differently for Dog and Cat classes through method overriding."
+      },
+      {
+        "id": "oop3",
+        "question": "What is the difference between an abstract class and an interface?",
+        "difficulty": "intermediate",
+        "keywords": ["abstract", "interface", "implement", "inherit", "method", "concrete"],
+        "sample_answer": "Abstract classes can have concrete methods and state; interfaces define only contracts. A class can implement multiple interfaces but typically inherits one abstract class."
+      },
+      {
+        "id": "oop4",
+        "question": "Explain the SOLID principles briefly.",
+        "difficulty": "intermediate",
+        "keywords": ["single responsibility", "open closed", "liskov", "interface segregation", "dependency inversion"],
+        "sample_answer": "SOLID: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion — design principles for maintainable OOP code."
+      }
+    ],
+    "sql": [
+      {
+        "id": "sql1",
+        "question": "What is the difference between INNER JOIN and LEFT JOIN?",
+        "difficulty": "beginner",
+        "keywords": ["inner join", "left join", "matching", "all rows", "null"],
+        "sample_answer": "INNER JOIN returns only matching rows from both tables. LEFT JOIN returns all rows from the left table, with NULLs for non-matching right table rows."
+      },
+      {
+        "id": "sql2",
+        "question": "What is a primary key and a foreign key?",
+        "difficulty": "beginner",
+        "keywords": ["primary key", "foreign key", "unique", "reference", "constraint"],
+        "sample_answer": "Primary key uniquely identifies each row in a table. Foreign key is a column that references the primary key of another table, establishing a relationship."
+      },
+      {
+        "id": "sql3",
+        "question": "What is the difference between WHERE and HAVING clauses?",
+        "difficulty": "intermediate",
+        "keywords": ["where", "having", "group by", "filter", "aggregate"],
+        "sample_answer": "WHERE filters rows before aggregation; HAVING filters after GROUP BY aggregation. Use HAVING with aggregate functions like COUNT, SUM."
+      },
+      {
+        "id": "sql4",
+        "question": "Explain database normalization and its first three normal forms.",
+        "difficulty": "intermediate",
+        "keywords": ["1NF", "2NF", "3NF", "normalization", "redundancy", "dependency"],
+        "sample_answer": "Normalization reduces redundancy. 1NF: atomic values; 2NF: no partial dependencies; 3NF: no transitive dependencies."
+      }
+    ],
+    "javascript": [
+      {
+        "id": "js1",
+        "question": "What is the difference between let, const, and var in JavaScript?",
+        "difficulty": "beginner",
+        "keywords": ["let", "const", "var", "scope", "hoisting", "block"],
+        "sample_answer": "var is function-scoped and hoisted; let is block-scoped; const is block-scoped and cannot be reassigned. Prefer const and let over var."
+      },
+      {
+        "id": "js2",
+        "question": "Explain JavaScript promises and async/await.",
+        "difficulty": "intermediate",
+        "keywords": ["promise", "async", "await", "asynchronous", "then", "resolve", "reject"],
+        "sample_answer": "Promises handle async operations with .then()/.catch(). async/await is syntactic sugar over promises, making async code look synchronous."
+      },
+      {
+        "id": "js3",
+        "question": "What is event delegation in JavaScript?",
+        "difficulty": "intermediate",
+        "keywords": ["event", "delegation", "bubble", "parent", "target", "listener"],
+        "sample_answer": "Event delegation attaches a single event listener to a parent element to handle events from child elements via event bubbling."
+      }
+    ],
+    "html_css": [
+      {
+        "id": "hc1",
+        "question": "What is the CSS box model?",
+        "difficulty": "beginner",
+        "keywords": ["margin", "padding", "border", "content", "box model"],
+        "sample_answer": "The CSS box model describes element layout: content area, padding (space inside border), border, and margin (space outside border)."
+      },
+      {
+        "id": "hc2",
+        "question": "What is the difference between Flexbox and CSS Grid?",
+        "difficulty": "intermediate",
+        "keywords": ["flexbox", "grid", "one-dimensional", "two-dimensional", "row", "column"],
+        "sample_answer": "Flexbox is one-dimensional (row OR column). CSS Grid is two-dimensional (rows AND columns). Use Flexbox for components, Grid for page layouts."
+      },
+      {
+        "id": "hc3",
+        "question": "What is semantic HTML and why does it matter?",
+        "difficulty": "beginner",
+        "keywords": ["semantic", "accessibility", "SEO", "header", "nav", "article", "section"],
+        "sample_answer": "Semantic HTML uses meaningful tags like <header>, <nav>, <article> that describe content purpose, improving accessibility and SEO."
+      }
+    ],
+    "statistics": [
+      {
+        "id": "stat1",
+        "question": "What is the difference between mean, median, and mode?",
+        "difficulty": "beginner",
+        "keywords": ["mean", "median", "mode", "average", "middle", "frequent"],
+        "sample_answer": "Mean is the average; median is the middle value in sorted data; mode is the most frequently occurring value."
+      },
+      {
+        "id": "stat2",
+        "question": "What is the Central Limit Theorem?",
+        "difficulty": "intermediate",
+        "keywords": ["normal distribution", "sample", "mean", "large", "CLT"],
+        "sample_answer": "CLT states that with a large enough sample size, the sampling distribution of the mean approaches a normal distribution regardless of the population's distribution."
+      }
+    ],
+    "git": [
+      {
+        "id": "git1",
+        "question": "What is the difference between git merge and git rebase?",
+        "difficulty": "intermediate",
+        "keywords": ["merge", "rebase", "history", "branch", "commit"],
+        "sample_answer": "git merge preserves branch history with a merge commit; git rebase rewrites history to create a linear commit history."
+      },
+      {
+        "id": "git2",
+        "question": "What is a pull request and why is it important?",
+        "difficulty": "beginner",
+        "keywords": ["pull request", "code review", "merge", "branch", "collaboration"],
+        "sample_answer": "A pull request proposes changes from one branch to another, enabling code review and discussion before merging into the main codebase."
+      }
+    ],
+    "figma": [
+      {
+        "id": "fig1",
+        "question": "What are Figma components and how do they help design consistency?",
+        "difficulty": "beginner",
+        "keywords": ["component", "reusable", "consistency", "instance", "master"],
+        "sample_answer": "Figma components are reusable design elements. Changing the master component updates all instances, ensuring design consistency across screens."
+      },
+      {
+        "id": "fig2",
+        "question": "What is auto-layout in Figma and when would you use it?",
+        "difficulty": "intermediate",
+        "keywords": ["auto-layout", "responsive", "spacing", "padding", "flex"],
+        "sample_answer": "Auto-layout makes frames respond to content changes, similar to CSS Flexbox. Use it for buttons, cards, and lists that should resize with content."
+      }
+    ],
+    "user_research": [
+      {
+        "id": "ur1",
+        "question": "What is the difference between qualitative and quantitative user research?",
+        "difficulty": "beginner",
+        "keywords": ["qualitative", "quantitative", "interviews", "surveys", "data", "insights"],
+        "sample_answer": "Qualitative research (interviews, usability tests) provides deep insights into WHY users behave a certain way. Quantitative (surveys, analytics) shows WHAT and HOW MANY."
+      }
+    ]
+  },
+  "hr": [
+    {
+      "id": "hr1",
+      "question": "Tell me about yourself.",
+      "difficulty": "beginner",
+      "keywords": ["experience", "skills", "background", "role", "interested"],
+      "sample_answer": "Briefly cover your educational background, relevant skills, past experience, and why you're interested in this role. Keep it professional and concise (2-3 minutes)."
+    },
+    {
+      "id": "hr2",
+      "question": "What are your greatest strengths and weaknesses?",
+      "difficulty": "beginner",
+      "keywords": ["strength", "weakness", "improve", "learning", "skill"],
+      "sample_answer": "For strengths, give specific examples. For weaknesses, name a real one but explain steps you're taking to improve it. Never say you have no weaknesses."
+    },
+    {
+      "id": "hr3",
+      "question": "Where do you see yourself in 5 years?",
+      "difficulty": "beginner",
+      "keywords": ["goal", "growth", "career", "company", "develop", "lead"],
+      "sample_answer": "Show ambition aligned with the role. Mention skill development, taking on more responsibility, and contributing meaningfully to the company."
+    },
+    {
+      "id": "hr4",
+      "question": "Why do you want to work at our company?",
+      "difficulty": "beginner",
+      "keywords": ["company", "culture", "mission", "values", "growth", "opportunity"],
+      "sample_answer": "Research the company beforehand. Mention their mission, culture, products, or recent achievements that genuinely excite you."
+    },
+    {
+      "id": "hr5",
+      "question": "Describe a time you faced a conflict with a team member. How did you resolve it?",
+      "difficulty": "intermediate",
+      "keywords": ["conflict", "communication", "resolve", "team", "compromise", "listen"],
+      "sample_answer": "Use the STAR method (Situation, Task, Action, Result). Focus on professional communication, listening, and finding a mutually beneficial solution."
+    },
+    {
+      "id": "hr6",
+      "question": "How do you handle tight deadlines and pressure?",
+      "difficulty": "intermediate",
+      "keywords": ["prioritize", "deadline", "pressure", "manage", "time", "organize"],
+      "sample_answer": "Explain your prioritization strategy, time management techniques, and a specific example where you delivered under pressure."
+    },
+    {
+      "id": "hr7",
+      "question": "Do you have any questions for us?",
+      "difficulty": "beginner",
+      "keywords": ["team", "culture", "growth", "role", "project", "expect"],
+      "sample_answer": "Always have questions ready! Ask about team dynamics, success metrics for the role, growth opportunities, or upcoming projects."
+    }
+  ]
+}
