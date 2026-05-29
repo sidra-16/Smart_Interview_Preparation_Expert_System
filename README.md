@@ -4,8 +4,6 @@ SmartPrep AI moves away from generic interview prep to create a tool that actual
 
 The backend uses Backward Chaining to verify if a user's skillset matches a target role's requirements. If a skill is missing, the system uses Negation-as-Failure to flag it as a gap and then uses Unification to pull specific study resources from the knowledge base. This ensures that the feedback provided is a logical conclusion derived directly from the requirements of the job market.
 
-### Gallery
-
 | Home Dashboard | Readiness Analysis |
 | :---: | :---: |
 | <img src="Screenshots/Home.png" width="400"> | <img src="Screenshots/Readiness%20Score.png" width="400"> |
@@ -65,15 +63,12 @@ streamlit run app.py
 The development of this system was supported by several core technologies and logic programming principles:
 
 * **SWI-Prolog**: The primary engine for symbolic reasoning and backward chaining.
-
-Link: https://www.swi-prolog.org/
+    Link: https://www.swi-prolog.org/
 
 * **PySwip**: A Python library that allows the application to query the Prolog knowledge base.
-
-Link: https://github.com/yuce/pyswip
+    Link: https://github.com/yuce/pyswip
 
 * **Streamlit**: The framework used to build the interactive web dashboard and UI.
-
-Link: https://docs.streamlit.io/
+    Link: https://docs.streamlit.io/
 
 * **Explainable AI (XAI)**: Theoretical framework used to ensure system transparency and rule-based traceability.
