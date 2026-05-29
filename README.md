@@ -34,11 +34,6 @@ The application uses a modular architecture that separates symbolic reasoning fr
 │   └── questions.json
 ├── prolog/
 │   └── knowledge_base.pl
-├── Screenshots/
-│   ├── Home.png
-│   ├── AI Reccomendations.png
-│   ├── AI Results.png
-│   └── Readiness Score.png
 └── utils/
     ├── helpers.py
     ├── prolog_engine.py
@@ -70,12 +65,15 @@ streamlit run app.py
 The development of this system was supported by several core technologies and logic programming principles:
 
 * **SWI-Prolog**: The primary engine for symbolic reasoning and backward chaining.
+
 Link: https://www.swi-prolog.org/
 
 * **PySwip**: A Python library that allows the application to query the Prolog knowledge base.
+
 Link: https://github.com/yuce/pyswip
 
 * **Streamlit**: The framework used to build the interactive web dashboard and UI.
+
 Link: https://docs.streamlit.io/
 
 * **Explainable AI (XAI)**: Theoretical framework used to ensure system transparency and rule-based traceability.
